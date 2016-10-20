@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date And Time</title>
+    <style>
+    p {font: 14px normal arial, verdana, helvetica}
+    </style>
+    <script>
+        function telltime() {
+            var now = new Date();
+            var i = "";
+            i += " <br />Date: " + now.getDate();
+            i += " <br />Month: " + now.getMonth();
+            i += " <br />Year: " + now.getFullYear();
+            i += " <br />Hours: " + now.getHours();
+            i += " <br />Minutes: " + now.getMinutes();
+            i += " <br />Seconds: " + now.getSeconds();
+            document.getElementById("div1").innerHTML = i;
+        }
+    </script>
+</head>
+<body>
+    The Current Time Is :<br />
+    <div id="div1"></div>
+    <script>    
+        telltime();
+    </script>
+    <input type="button" onclick="location.reload()" value="RELOAD" />
+</body>
+</html>

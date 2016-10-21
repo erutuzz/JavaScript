@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>What day is today</title>
+    <script>
+        var message = "";
+        function day(d) {
+            switch(d) {
+                case 0 :
+                    message = "Holiday!";
+                    break;
+                case 1 :
+                    message = "You have a class at 2:00 p.m.";
+                    break;
+                case 2 :
+                    message = "You have a class at 9:00 a.m.";
+                    break;
+                case 3 :
+                    message = "Holiday";
+                    break;
+                case 4 :
+                    message = "You have two classes,one at 9:00 a.m and  another at 2:00 p.m.";
+                    break;
+                case 5 :
+                    message = "Holiday";
+                    break;
+                case 6 :
+                    message = "Holiday";
+                    break;
+            }
+            document.getElementById("schedule").innerHTML = message;
+        }
+    </script>
+<head>
+<body>
+    <p>What day is today ?</p>
+    <input type="button" value="Sunday" onclick="day(0)" />
+    <input type="button" value="Monday" onclick="day(1)" />
+    <input type="button" value="Tuesday" onclick="day(2)" />
+    <input type="button" value="Wednesday" onclick="day(3)" />
+    <input type="button" value="Thurday" onclick="day(4)" />
+    <input type="button" value="Friday" onclick="day(5)" />
+    <input type="button" value="Saturday" onclick="day(6)" />
+    <p><div id="schedule"></div></p>
+</body>
+</html> 

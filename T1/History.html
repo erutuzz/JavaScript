@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+    <script>
+        function forward() {
+            history.forward();
+        }
+        function backward() {
+            history.back();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Length" onclick="alert(' Youve visited ' + history.length + ' Web pages in \
+this browser session');" />
+    <input type="button" value="Forward" onclick="forward();" />
+    <input type="button" value="Backward" onclick="backward();" />
+</body>
+</html>
